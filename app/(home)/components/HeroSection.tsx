@@ -2,6 +2,7 @@ import { MovingBorderBtn } from '@/components/ui/MovingBorder'
 import Link from 'next/link'
 import React from 'react'
 import Title from './Title'
+import ProfileCard from './ProfileCard'
 
 const HeroSection = () => {
     return (
@@ -20,7 +21,7 @@ const HeroSection = () => {
             </div>  
             
             <div className="relative">
-                <div className="size-72 space-y-3 -rotate-[30deg] relative">
+                <div className="size-72 relative">
                     {/* <div className="flex gap-3 translate-x-8">
                         <div className="size-32 rounded-2xl bg-red-900"></div>
                         <div className="size-32 rounded-full bg-slate-50"></div>
@@ -29,6 +30,7 @@ const HeroSection = () => {
                         <div className="size-32 rounded-2xl bg-slate-50"></div>
                         <div className="size-32 rounded-full bg-red-900"></div>
                     </div> */}
+                    <ProfileCard />
                     <div className="glow absolute top-[40%] right-1/2 -z-10 "></div>
                 </div>
             </div>

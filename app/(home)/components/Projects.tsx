@@ -117,12 +117,12 @@ const Projects = () => {
       /> */}
       <div className="flex flex-col items-center justify-center">
         <button className="text-2xl inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-          Projects 🎨
+          Projects
         </button>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 pt-20 gap-5">
-        {projects.map((project, index) => {
+        {projects.slice(0, 6).map((project, index) => {
           const { link, title, tech, cover } = project;
           return (
             <Link href={link} key={index}>
@@ -144,6 +144,14 @@ const Projects = () => {
             </Link>
           );
         })}
+      </div>
+      <div className="flex flex-col items-center justify-center py-4">
+        <Link
+          href="https://github.com/KamelTouati"
+          className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear"
+        >
+          See more
+        </Link>
       </div>
     </div>
   );
