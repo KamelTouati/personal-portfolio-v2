@@ -20,7 +20,7 @@ const Navbar = ({ className }: { className?: string }) => {
     },
 
     {
-      Link: "https://www.instagram.com/shaynedemain/",
+      Link: "https://www.instagram.com/_kamel_touati/",
       Label: "Instagram",
       Icon: SiInstagram,
     },
@@ -44,7 +44,7 @@ const Navbar = ({ className }: { className?: string }) => {
           const Icon = socials.Icon;
 
           return (
-            <Link href={socials.Link} key={index} aria-label={socials.Label}>
+            <Link target="_blank" href={socials.Link} key={index} aria-label={socials.Label}>
               <Icon className="size-5 hover:scale-125 transition-all" />
             </Link>
           );
