@@ -66,8 +66,11 @@ const DummyContent: FC<DummyContentProps> = ({
         <span className="font-bold">Tech Used: </span>
         <div className="flex flex-wrap flex-row gap-4 mt-2">
           {tech.map((TechIcon, index) => (
-            <div className="py-2 px-4 rounded-[10px] bg-gray-200 flex justify-center items-center">
-              <TechIcon key={index} className="inline-block mr-2" />
+            <div
+              key={index}
+              className="py-2 px-4 rounded-[10px] bg-gray-200 flex justify-center items-center"
+            >
+              <TechIcon className="inline-block mr-2" />
             </div>
           ))}
         </div>
