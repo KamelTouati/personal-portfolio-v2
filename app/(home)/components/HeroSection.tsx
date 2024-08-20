@@ -6,7 +6,7 @@ import ProfileCard from './ProfileCard'
 
 const HeroSection = () => {
     return (
-        <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
+        <div className="text-white min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
             <div className="space-y-10 text-center lg:text-left">
                 <h1 className="text-4xl lg:text-7xl font-bold">
                 Hi! 👋

@@ -35,7 +35,7 @@ const Navbar = ({ className }: { className?: string }) => {
     >
       <div className="flex gap-2">
         <Image alt="image" src="/logo.svg" height={20} width={20} />
-        <h1 className="text-2x1 font-bold underline underline-offset-8 decoration-blue-500 -rotate-2">
+        <h1 className="text-white text-2x1 font-bold underline underline-offset-8 decoration-blue-500 -rotate-2">
           T.K
         </h1>
       </div>
@@ -44,7 +44,7 @@ const Navbar = ({ className }: { className?: string }) => {
           const Icon = socials.Icon;
 
           return (
-            <Link target="_blank" href={socials.Link} key={index} aria-label={socials.Label}>
+            <Link className="text-white" target="_blank" href={socials.Link} key={index} aria-label={socials.Label}>
               <Icon className="size-5 hover:scale-125 transition-all" />
             </Link>
           );
